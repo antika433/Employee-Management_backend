@@ -22,7 +22,13 @@ public class EmployeeController {
 	
 	@Autowired
 	private EmployeeService employeeService;
+
 	
+    @GetMapping("/")
+    public String home() {
+        return "Employee Service Running!";
+    }
+
 	@GetMapping("/employees")
 	public ResponseEntity<List<Employee>> getAllEmployees() {
 		return ResponseEntity.ok(employeeService.getAllEmployees());
