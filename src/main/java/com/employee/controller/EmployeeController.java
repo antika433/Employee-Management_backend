@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.employee.entity.Employee;
 import com.employee.service.EmployeeService;
 
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://employee-management-frontend-61ny.onrender.com")
 @RestController
 public class EmployeeController {
 	
